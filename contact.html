@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitPulse İletişim — Bizimle iletişime geçin. Sorularınızı ve önerilerinizi bekliyoruz.">
+  <title>FitPulse — İletişim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-dot"></div>
+      FitPulse
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="workouts.html">Antrenmanlar</a></li>
+      <li><a href="recipes.html">Tarifler</a></li>
+      <li><a href="calculator.html">Hesaplayıcı</a></li>
+      <li><a href="contact.html" class="active">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT -->
+  <main class="page-wrapper">
+    <div class="page-header">
+      <h1>Bize <span class="accent">Ulaşın</span></h1>
+      <p>Sorularınız, önerileriniz veya geri bildirimleriniz için formu doldurun.</p>
+    </div>
+
+    <div class="contact-layout">
+      <form class="contact-form" id="contactForm">
+        <!-- Name & Email row -->
+        <div class="contact-row">
+          <div class="form-group">
+            <label for="contactName">İsim</label>
+            <input type="text" id="contactName" class="input" placeholder="Adınız Soyadınız" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">E-posta</label>
+            <input type="email" id="contactEmail" class="input" placeholder="ornek@email.com" required>
+          </div>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="contactSubject">Konu</label>
+          <input type="text" id="contactSubject" class="input" placeholder="Mesajınızın konusu" required>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="contactMessage">Mesaj</label>
+          <textarea id="contactMessage" class="input" placeholder="Mesajınızı buraya yazın..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width:100%;">Gönder</button>
+      </form>
+
+      <!-- Success message -->
+      <div class="contact-success" id="contactSuccess">
+        <div class="check-icon">✓</div>
+        <h3>Mesajınız Gönderildi!</h3>
+        <p>En kısa sürede size dönüş yapacağız. Teşekkürler.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 <a href="index.html">FitPulse</a>. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

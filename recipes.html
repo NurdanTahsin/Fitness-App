@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitPulse Tarifler — Sağlıklı tarifleri protein ve kalori değerlerine göre sıralayın. Malzeme ve yapılışları görüntüleyin.">
+  <title>FitPulse — Tarifler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-dot"></div>
+      FitPulse
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="workouts.html">Antrenmanlar</a></li>
+      <li><a href="recipes.html" class="active">Tarifler</a></li>
+      <li><a href="calculator.html">Hesaplayıcı</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="page-wrapper">
+    <div class="page-header">
+      <h1>Sağlıklı <span class="accent">Tarifler</span></h1>
+      <p>Vücudunuzu besleyici öğünlerle yakıtlayın. Protein veya kaloriye göre sıralayın.</p>
+    </div>
+
+    <div class="sort-controls">
+      <label for="recipeSortSelect">Sırala:</label>
+      <select class="select" id="recipeSortSelect">
+        <option value="default">Varsayılan</option>
+        <option value="protein">Protein (Yüksek → Düşük)</option>
+        <option value="calories">Kalori (Düşük → Yüksek)</option>
+      </select>
+    </div>
+
+    <section class="recipes-list" id="recipesList">
+
+      <!-- Recipe 1 -->
+      <article class="recipe-card" data-protein="42" data-calories="480">
+        <div class="recipe-image">
+          <img src="images/recipe-chicken.png" alt="Izgara Tavuk Power Bowl">
+        </div>
+        <div class="recipe-info">
+          <h3>Izgara Tavuk Power Bowl</h3>
+          <p class="recipe-desc">Esmer pirinç, buharda brokoli ve cherry domates eşliğinde ızgara tavuk göğsü — klasik kas yapıcı öğün.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">480</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">42g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">38g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">12g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>200g tavuk göğsü</li>
+              <li>1 su bardağı esmer pirinç</li>
+              <li>1 kase brokoli</li>
+              <li>6-8 cherry domates</li>
+              <li>Zeytinyağı, tuz, karabiber</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Pirinci haşlayın. Tavuğu zeytinyağı, tuz ve karabiberle marine edip ızgara veya tavada pişirin. Brokoliyi buğulayın. Kasenin içine pirinci koyun, üzerine tavuk ve sebzeleri yerleştirin.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recipe 2 -->
+      <article class="recipe-card" data-protein="38" data-calories="520">
+        <div class="recipe-image">
+          <img src="images/recipe-salmon.png" alt="Limonlu Somon">
+        </div>
+        <div class="recipe-info">
+          <h3>Limonlu Fırın Somon</h3>
+          <p class="recipe-desc">Omega-3 zengini Atlantik somonu, limon ve otlarla fırınlanıp kinoa ve taze kuşkonmaz eşliğinde servis edilir.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">520</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">38g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">32g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">22g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>200g somon fileto</li>
+              <li>1 adet limon</li>
+              <li>1/2 su bardağı kinoa</li>
+              <li>6 dal kuşkonmaz</li>
+              <li>Dereotu, sarımsak, zeytinyağı</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Kinoa haşlanır. Somon filetoyu fırın tepsisine koyun, üzerine limon dilimleri, dereotu ve sarımsak serpin. 200°C'de 18-20 dk pişirin. Kuşkonmazı zeytinyağıyla soteleyin. Kinoayla servis edin.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recipe 3 -->
+      <article class="recipe-card" data-protein="18" data-calories="340">
+        <div class="recipe-image">
+          <img src="images/recipe-smoothie.png" alt="Açaí Smoothie Bowl">
+        </div>
+        <div class="recipe-info">
+          <h3>Açaí Protein Smoothie Bowl</h3>
+          <p class="recipe-desc">Canlı açaí bazlı, muzlu, yaban mersinli, granola ve chia tohumlu harika bir antrenman sonrası atıştırmalık.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">340</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">18g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">52g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">8g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>100g dondurulmuş açaí püresi</li>
+              <li>1 adet muz</li>
+              <li>1 ölçek whey protein</li>
+              <li>Yaban mersini, granola, chia tohumu</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Açaí püresini, muzun yarısını ve protein tozunu blender'da karıştırın. Kasenin içine dökün. Üzerine muz dilimleri, yaban mersini, granola ve chia tohumu ile süsleyin.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recipe 4 -->
+      <article class="recipe-card" data-protein="26" data-calories="380">
+        <div class="recipe-image">
+          <img src="images/recipe-stirfry.png" alt="Tofu Sebze Sote">
+        </div>
+        <div class="recipe-info">
+          <h3>Tofu Sebze Sote</h3>
+          <p class="recipe-desc">Çıtır tofu, renkli biberler, şeker bezelyesi ve susam taneleriyle soya-zencefil soslu bitkisel protein kaynağı.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">380</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">26g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">28g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">16g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>200g firm tofu</li>
+              <li>1 kırmızı biber, 1 yeşil biber</li>
+              <li>1 avuç şeker bezelyesi</li>
+              <li>2 yemek kaşığı soya sosu</li>
+              <li>1 tatlı kaşığı rendelenmiş zencefil</li>
+              <li>Susam yağı, susam tanesi</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Tofuyu küp doğrayıp susam yağında çıtır olana kadar kızartın. Biberleri ve bezelyeleri ekleyip 2-3 dk soteleyin. Soya sosu ve zencefili ekleyip karıştırın. Susam serperek servis edin.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recipe 5 -->
+      <article class="recipe-card" data-protein="22" data-calories="290">
+        <div class="recipe-image">
+          <img src="images/recipe-yogurt.png" alt="Yunan Yoğurdu Parfait">
+        </div>
+        <div class="recipe-info">
+          <h3>Yunan Yoğurdu Parfait</h3>
+          <p class="recipe-desc">Koyu kıvamlı Yunan yoğurdu, taze karışık meyveler, bal ve kırılmış bademle zenginleştirilmiş protein deposu.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">290</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">22g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">34g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">9g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>200g Yunan yoğurdu</li>
+              <li>Çilek, böğürtlen, yaban mersini</li>
+              <li>1 tatlı kaşığı bal</li>
+              <li>1 yemek kaşığı kırılmış badem</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Cam kavanoza önce yoğurdu koyun, üzerine meyveleri yerleştirin. Bal gezdirin ve kırılmış bademlerle tamamlayın. İsteğe bağlı chia tohumu eklenebilir.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Recipe 6 -->
+      <article class="recipe-card" data-protein="28" data-calories="420">
+        <div class="recipe-image">
+          <img src="images/recipe-avocado.png" alt="Avoakdo Yumurta Tost">
+        </div>
+        <div class="recipe-info">
+          <h3>Avokado Yumurta Tost</h3>
+          <p class="recipe-desc">Kızarmış ekşi maya ekmeği üzerinde ezilmiş avokado, poşe yumurta, mikro yeşillikler ve pul biberle servis edilir.</p>
+          <div class="nutrition-facts">
+            <div class="nutrition-item">
+              <span class="nut-value">420</span>
+              <span class="nut-label">Kalori</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">28g</span>
+              <span class="nut-label">Protein</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">30g</span>
+              <span class="nut-label">Karb</span>
+            </div>
+            <div class="nutrition-item">
+              <span class="nut-value">20g</span>
+              <span class="nut-label">Yağ</span>
+            </div>
+          </div>
+          <div class="recipe-extra">
+            <h4>Malzemeler</h4>
+            <ul>
+              <li>2 dilim ekşi maya ekmeği</li>
+              <li>1 olgun avokado</li>
+              <li>2 adet yumurta</li>
+              <li>Cherry domates, mikro yeşillik</li>
+              <li>Pul biber, tuz, limon suyu</li>
+            </ul>
+            <h4>Hazırlanışı</h4>
+            <p>Ekmeği kızartın. Avokadoyu çatalla ezin, limon suyu ve tuz ekleyin. Ekmek üzerine sürün. Yumurtaları poşe yapıp üzerine yerleştirin. Domates, yeşillik ve pul biberle süsleyin.</p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 <a href="index.html">FitPulse</a>. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* ===== HESAPLAYICI ===== */
+.calc-split {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.calc-form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.calc-form-container {
+  width: 100%;
+  max-width: 380px;
+}
+
+.calc-form-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.calc-form-container .form-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.gender-group {
+  display: flex;
+  gap: 10px;
+}
+
+.gender-option {
+  flex: 1;
+  position: relative;
+}
+
+.gender-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.gender-option label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: #666;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.gender-option input:checked+label {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-calculate {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.calc-result-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  border-left: 1px solid #f0f0f0;
+  padding: 40px 24px;
+}
+
+.result-placeholder {
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.result-placeholder .placeholder-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.result-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.result-card.show {
+  display: flex;
+}
+
+.result-card .result-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+.result-card .result-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.result-card .result-unit {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.result-card .result-note {
+  font-size: 0.8rem;
+  color: #999;
+  max-width: 260px;
+  margin-top: 8px;
+}
+
+.tdee-breakdown {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tdee-item {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 100px;
+  background: #242424;
+}
+
+.tdee-item .tdee-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.tdee-item .tdee-label {
+  font-size: 0.65rem;
+  color: #999;
+}
+
+/* ===== İLETİŞİM ===== */
+.contact-layout {
+  max-width: 560px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+.contact-form {
+  padding: 28px 24px;
+}
+
+.contact-form label {
+  color: #a0a0a0;
+}
+
+.contact-form .input {
+  background: #252525;
+  border-color: #333;
+  color: #f0f0f0;
+}
+
+.contact-form .input:focus {
+  border-color: var(--accent);
+}
+
+.contact-row {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-row .form-group {
+  flex: 1;
+}
+
+.contact-success {
+  display: none;
+  text-align: center;
+  padding: 32px;
+}
+
+.contact-success.show {
+  display: block;
+}
+
+.contact-success .check-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #27ae60;
+}
+
+.contact-success h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.contact-success p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+

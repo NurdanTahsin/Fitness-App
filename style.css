@@ -1,0 +1,7 @@
+/* === FitPulse - Stil Dosyası (Modüler) === */
+@import url('styles/base.css');
+@import url('styles/home.css');
+@import url('styles/workouts.css');
+@import url('styles/recipes.css');
+@import url('styles/calculator-contact.css');
+@import url('styles/responsive.css');

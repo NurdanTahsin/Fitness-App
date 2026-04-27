@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitPulse BMR Hesaplayıcı — Mifflin-St Jeor denklemi ile bazal metabolizma hızınızı hesaplayın.">
+  <title>FitPulse — BMR Hesaplayıcı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-dot"></div>
+      FitPulse
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="workouts.html">Antrenmanlar</a></li>
+      <li><a href="recipes.html">Tarifler</a></li>
+      <li><a href="calculator.html" class="active">Hesaplayıcı</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <!-- CALCULATOR -->
+  <main class="page-wrapper">
+    <div class="calc-split">
+
+      <!-- LEFT — Form -->
+      <div class="calc-form-side">
+        <div class="calc-form-container">
+          <h2>BMR <span class="accent">Hesaplayıcı</span></h2>
+          <p class="form-subtitle">Bilgilerinizi girerek bazal metabolizma hızınızı hesaplayın.</p>
+
+          <form id="bmrForm" autocomplete="off">
+            <div class="form-group">
+              <label>Cinsiyet</label>
+              <div class="gender-group">
+                <div class="gender-option">
+                  <input type="radio" name="gender" id="genderMale" value="male">
+                  <label for="genderMale">♂ Erkek</label>
+                </div>
+                <div class="gender-option">
+                  <input type="radio" name="gender" id="genderFemale" value="female" checked>
+                  <label for="genderFemale">♀ Kadın</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputAge">Yaş</label>
+              <input type="number" id="inputAge" class="input" placeholder="Örn: 25" min="1" max="120" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputHeight">Boy (cm)</label>
+              <input type="number" id="inputHeight" class="input" placeholder="Örn: 170" min="50" max="300" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputWeight">Kilo (kg)</label>
+              <input type="number" id="inputWeight" class="input" placeholder="Örn: 65" min="10" max="500" required>
+            </div>
+
+            <button type="submit" class="btn btn-calculate">Hesapla</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT — Result -->
+      <div class="calc-result-side">
+        <div class="result-display">
+          <div class="result-placeholder" id="resultPlaceholder">
+            <div class="placeholder-icon">📊</div>
+            <p>Formu doldurup <strong>Hesapla</strong> butonuna<br>basarak sonucunuzu görün.</p>
+          </div>
+
+          <div class="result-card" id="resultCard">
+            <span class="result-label">Bazal Metabolizma Hızınız</span>
+            <div class="result-value" id="bmrValue">—</div>
+            <span class="result-unit">kcal / gün</span>
+            <p class="result-note">Bu, vücudunuzun dinlenme halinde temel fizyolojik fonksiyonları sürdürmek için ihtiyaç duyduğu kalori miktarıdır.</p>
+
+            <div class="tdee-breakdown" id="tdeeBreakdown">
+              <div class="tdee-item">
+                <div class="tdee-value" id="tdeeSedentary">—</div>
+                <div class="tdee-label">Hareketsiz</div>
+              </div>
+              <div class="tdee-item">
+                <div class="tdee-value" id="tdeeLight">—</div>
+                <div class="tdee-label">Az Aktif</div>
+              </div>
+              <div class="tdee-item">
+                <div class="tdee-value" id="tdeeModerate">—</div>
+                <div class="tdee-label">Orta Aktif</div>
+              </div>
+              <div class="tdee-item">
+                <div class="tdee-value" id="tdeeActive">—</div>
+                <div class="tdee-label">Çok Aktif</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
