@@ -1,11 +1,11 @@
 /* ============================================================
-   SCRIPT.JS — FitPulse
-   Tüm etkileşimli mantık: 5 sayfa
-   ============================================================ */
+  script.js — FitPulse
+  Sayfa etkileşimleri burada yönetilir.
+  ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── 1. NAVBAR — Hamburger Menu ───────────────────────────── */
+  /* 1. Üst menü: hamburger aç/kapa */
 
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('navMenu');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 2. WORKOUTS — Filter by Frequency ────────────────────── */
+  /* 2. Antrenmanlar: frekansa göre filtre */
 
   const filterButtons = document.querySelectorAll('.filter-btn');
   const workoutCards = document.querySelectorAll('.workout-card');
@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (filterButtons.length && workoutCards.length) {
     filterButtons.forEach(btn => {
       btn.addEventListener('click', () => {
-        const filter = btn.getAttribute('data-filter');
+        const filter = btn.dataset.filter;
 
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
         workoutCards.forEach(card => {
-          const freq = card.getAttribute('data-frequency');
+          const freq = card.dataset.frequency;
           if (filter === 'all' || freq === filter) {
             card.classList.remove('hidden');
           } else {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 3. WORKOUTS — Open detail in modal ────────────────────── */
+  /* 3. Antrenmanlar: detayları modalda aç */
 
   const modal = document.getElementById('workoutModal');
   const modalHeader = document.getElementById('modalHeader');
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 4. RECIPES — Sort by Protein / Calories ──────────────── */
+  /* 4. Tarifler: protein veya kaloriye göre sırala */
 
   const sortSelect = document.getElementById('recipeSortSelect');
   const recipesList = document.getElementById('recipesList');
@@ -120,16 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (sortBy === 'default') {
         originalOrder.forEach(card => recipesList.appendChild(card));
       } else if (sortBy === 'protein') {
-        cards.sort((a, b) => parseInt(b.dataset.protein) - parseInt(a.dataset.protein));
+        cards.sort((a, b) => Number.parseInt(b.dataset.protein) - Number.parseInt(a.dataset.protein));
         cards.forEach(card => recipesList.appendChild(card));
       } else if (sortBy === 'calories') {
-        cards.sort((a, b) => parseInt(a.dataset.calories) - parseInt(b.dataset.calories));
+        cards.sort((a, b) => Number.parseInt(a.dataset.calories) - Number.parseInt(b.dataset.calories));
         cards.forEach(card => recipesList.appendChild(card));
       }
     });
   }
 
-  /* ── 5. CALCULATOR — BMR (Mifflin-St Jeor) ───────────────── */
+  /* 5. Hesaplayıcı: BMR ve TDEE hesapla */
 
   const bmrForm = document.getElementById('bmrForm');
 
@@ -138,16 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const gender = document.querySelector('input[name="gender"]:checked').value;
-      const age = parseFloat(document.getElementById('inputAge').value);
-      const height = parseFloat(document.getElementById('inputHeight').value);
-      const weight = parseFloat(document.getElementById('inputWeight').value);
+      const age = Number.parseFloat(document.getElementById('inputAge').value);
+      const height = Number.parseFloat(document.getElementById('inputHeight').value);
+      const weight = Number.parseFloat(document.getElementById('inputWeight').value);
 
-      if (isNaN(age) || isNaN(height) || isNaN(weight) || age <= 0 || height <= 0 || weight <= 0) {
+      if (Number.isNaN(age) || Number.isNaN(height) || Number.isNaN(weight) || age <= 0 || height <= 0 || weight <= 0) {
         alert('Lütfen tüm alanları geçerli pozitif sayılarla doldurun.');
         return;
       }
 
-      // Mifflin-St Jeor: Male +5, Female -161
+      // Mifflin-St Jeor formülü: erkek +5, kadın -161
       let bmr = (10 * weight) + (6.25 * height) - (5 * age) + (gender === 'male' ? 5 : -161);
       bmr = Math.round(bmr);
 
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
       resultCard.classList.add('show');
       document.getElementById('bmrValue').textContent = bmr;
 
-      // TDEE estimates
+      // Günlük toplam kalori tahminleri
       document.getElementById('tdeeSedentary').textContent = Math.round(bmr * 1.2);
       document.getElementById('tdeeLight').textContent = Math.round(bmr * 1.375);
       document.getElementById('tdeeModerate').textContent = Math.round(bmr * 1.55);
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 6. CONTACT — Form Submit ─────────────────────────────── */
+  /* 6. İletişim: form gönderince başarı mesajı göster */
 
   const contactForm = document.getElementById('contactForm');
 

@@ -1,9 +1,11 @@
-/* ===== HESAPLAYICI ===== */
+/* ===== HESAPLAYICI SAYFASI ===== */
 .calc-split {
   display: flex;
   min-height: calc(100vh - 60px);
 }
 
+/* Sol form alanı */
+/* Not: form burada BMR girişleri alır; submit ile JS sonucu gösterir. */
 .calc-form-side {
   flex: 1;
   display: flex;
@@ -12,6 +14,8 @@
   padding: 40px 24px;
 }
 
+/* Form kutusu */
+/* Not: result-card.show sınıfı JS tarafından eklenip sonucu görünür yapar. */
 .calc-form-container {
   width: 100%;
   max-width: 380px;
@@ -29,11 +33,13 @@
   margin-bottom: 28px;
 }
 
+/* Cinsiyet seçim grubu */
 .gender-group {
   display: flex;
   gap: 10px;
 }
 
+/* Cinsiyet seçeneği */
 .gender-option {
   flex: 1;
   position: relative;
@@ -68,6 +74,7 @@
   margin-top: 6px;
 }
 
+/* Sonuç alanı */
 .calc-result-side {
   flex: 1;
   display: flex;
@@ -88,6 +95,7 @@
   margin-bottom: 8px;
 }
 
+/* Sonuç kartı gizli başlangıç durumu */
 .result-card {
   display: none;
   flex-direction: column;
@@ -96,6 +104,7 @@
   text-align: center;
 }
 
+/* Sonuç kartı görünür hali */
 .result-card.show {
   display: flex;
 }
@@ -126,6 +135,7 @@
   margin-top: 8px;
 }
 
+/* TDEE kutuları */
 .tdee-breakdown {
   margin-top: 20px;
   display: flex;
@@ -154,13 +164,14 @@
   color: #999;
 }
 
-/* ===== İLETİŞİM ===== */
+/* ===== İLETİŞİM SAYFASI ===== */
 .contact-layout {
   max-width: 560px;
   margin: 20px auto 0;
   padding: 0 20px;
 }
 
+/* İletişim formu */
 .contact-form {
   padding: 28px 24px;
 }
@@ -179,6 +190,7 @@
   border-color: var(--accent);
 }
 
+/* İsim ve e-posta satırı */
 .contact-row {
   display: flex;
   gap: 12px;
@@ -188,12 +200,14 @@
   flex: 1;
 }
 
+/* Başarı mesajı başlangıçta gizli */
 .contact-success {
   display: none;
   text-align: center;
   padding: 32px;
 }
 
+/* Başarı mesajı görünür hali */
 .contact-success.show {
   display: block;
 }
@@ -213,4 +227,3 @@
   color: var(--text-muted);
   font-size: 0.85rem;
 }
-

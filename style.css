@@ -1,7 +1,13 @@
-/* === FitPulse - Stil Dosyası (Modüler) === */
+/* === FitPulse ana stil dosyası === */
+/* Ortak temel stiller */
 @import url('styles/base.css');
+/* Ana sayfa stilleri */
 @import url('styles/home.css');
+/* Antrenman sayfası stilleri */
 @import url('styles/workouts.css');
+/* Tarif sayfası stilleri */
 @import url('styles/recipes.css');
+/* Hesaplayıcı ve iletişim stilleri */
 @import url('styles/calculator-contact.css');
+/* Mobil uyumlu ayarlar */
 @import url('styles/responsive.css');

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FitPulse Antrenmanlar — Haftalık programınıza uygun antrenmanları filtreleyin ve detaylı hareketleri görün.">
+  <meta name="description"
+    content="FitPulse Antrenmanlar — Haftalık programınıza uygun antrenmanları filtreleyin ve detaylı hareketleri görün.">
   <title>FitPulse — Antrenmanlar</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
+  <!-- Üst menü -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">
       <div class="logo-dot"></div>
@@ -27,7 +30,7 @@
     </ul>
   </nav>
 
-  <!-- MAIN -->
+  <!-- Antrenman içerikleri -->
   <main class="page-wrapper">
     <div class="page-header">
       <h1>Antrenman <span class="accent">Programları</span></h1>
@@ -36,7 +39,7 @@
 
     <div class="workouts-layout">
 
-      <!-- Sidebar -->
+      <!-- Sol filtre alanı -->
       <aside class="workouts-sidebar">
         <div class="sidebar-title">Sıklık Filtresi</div>
         <button class="filter-btn active" data-filter="all">Tümü</button>
@@ -44,12 +47,12 @@
         <button class="filter-btn" data-filter="5">Haftada 5 Gün</button>
       </aside>
 
-      <!-- Cards — Kolaydan Zora sıralı -->
+      <!-- Kartlar: kolaydan zora sıralı -->
       <section class="workouts-main" id="workoutCards">
 
-        <!-- ═══ BAŞLANGIÇ ═══ -->
+        <!-- Başlangıç seviyesi programlar -->
 
-        <!-- 1. Full Body Strength — Başlangıç -->
+        <!-- 1. Full Body Strength -->
         <div class="workout-card" data-frequency="3" data-level="1">
           <div class="card-header">
             <div>
@@ -60,41 +63,114 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Tüm büyük kas gruplarını hedefleyen, bileşik hareketlerle dolu haftada 3 günlük program.</p>
+          <p class="card-description">Tüm büyük kas gruplarını hedefleyen, bileşik hareketlerle dolu haftada 3 günlük
+            program.</p>
           <div class="card-toggle">Programı Gör →</div>
-          <!-- Hidden detail data -->
+          <!-- Gizli detay verisi (kart tıklanınca modalda gösteriliyor) -->
           <div class="workout-detail" hidden>
             <h4>1. Gün — Tüm Vücut A</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Squat</td><td>3</td><td>10</td></tr>
-              <tr><td>Bench Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Barbell Row</td><td>3</td><td>10</td></tr>
-              <tr><td>Shoulder Press</td><td>3</td><td>8</td></tr>
-              <tr><td>Plank</td><td>3</td><td>30sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Squat</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Barbell Row</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Shoulder Press</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>30sn</td>
+              </tr>
             </table>
             <h4>2. Gün — Tüm Vücut B</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Deadlift</td><td>3</td><td>8</td></tr>
-              <tr><td>Incline DB Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Lat Pulldown</td><td>3</td><td>10</td></tr>
-              <tr><td>Lateral Raise</td><td>3</td><td>12</td></tr>
-              <tr><td>Cable Crunch</td><td>3</td><td>15</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Deadlift</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Incline DB Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lat Pulldown</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lateral Raise</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Cable Crunch</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
             </table>
             <h4>3. Gün — Tüm Vücut C</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Leg Press</td><td>3</td><td>12</td></tr>
-              <tr><td>Dips</td><td>3</td><td>10</td></tr>
-              <tr><td>Cable Row</td><td>3</td><td>10</td></tr>
-              <tr><td>Face Pull</td><td>3</td><td>15</td></tr>
-              <tr><td>Hanging Leg Raise</td><td>3</td><td>12</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Dips</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Cable Row</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Face Pull</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Hanging Leg Raise</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- 2. Core & Karın — Başlangıç -->
+        <!-- 2. Core ve karın -->
         <div class="workout-card" data-frequency="3" data-level="1">
           <div class="card-header">
             <div>
@@ -105,37 +181,98 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Karın ve core bölgesini güçlendiren, duruşu iyileştiren ve sağlam bir temel oluşturan hedefli egzersizler.</p>
+          <p class="card-description">Karın ve core bölgesini güçlendiren, duruşu iyileştiren ve sağlam bir temel
+            oluşturan hedefli egzersizler.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Karın Ön</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Crunch</td><td>3</td><td>20</td></tr>
-              <tr><td>Leg Raise</td><td>3</td><td>15</td></tr>
-              <tr><td>Plank</td><td>3</td><td>45sn</td></tr>
-              <tr><td>Dead Bug</td><td>3</td><td>12</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Crunch</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Leg Raise</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>45sn</td>
+              </tr>
+              <tr>
+                <td>Dead Bug</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
             </table>
             <h4>2. Gün — Oblik & Yan</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Russian Twist</td><td>3</td><td>16</td></tr>
-              <tr><td>Side Plank</td><td>3</td><td>30sn</td></tr>
-              <tr><td>Woodchop</td><td>3</td><td>12</td></tr>
-              <tr><td>Bicycle Crunch</td><td>3</td><td>20</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Russian Twist</td>
+                <td>3</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Side Plank</td>
+                <td>3</td>
+                <td>30sn</td>
+              </tr>
+              <tr>
+                <td>Woodchop</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Bicycle Crunch</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
             </table>
             <h4>3. Gün — Stabilite</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Bird Dog</td><td>3</td><td>10</td></tr>
-              <tr><td>Pallof Press</td><td>3</td><td>12</td></tr>
-              <tr><td>Ab Rollout</td><td>3</td><td>10</td></tr>
-              <tr><td>Hollow Body Hold</td><td>3</td><td>30sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Bird Dog</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Pallof Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Ab Rollout</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Hollow Body Hold</td>
+                <td>3</td>
+                <td>30sn</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- 3. Yoga & Mobilite — Başlangıç -->
+        <!-- 3. Yoga ve mobilite -->
         <div class="workout-card" data-frequency="5" data-level="1">
           <div class="card-header">
             <div>
@@ -146,39 +283,100 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Esneklik, denge ve mobiliteyi artırmak için yönlendirilmiş yoga akışları. Toparlanma ve stres atma için mükemmel.</p>
+          <p class="card-description">Esneklik, denge ve mobiliteyi artırmak için yönlendirilmiş yoga akışları.
+            Toparlanma ve stres atma için mükemmel.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Sabah Akışı</h4>
             <table>
-              <tr><th>Hareket</th><th>Süre</th><th>Not</th></tr>
-              <tr><td>Sun Salutation</td><td>5 dk</td><td>5 tur</td></tr>
-              <tr><td>Warrior I & II</td><td>4 dk</td><td>Her taraf</td></tr>
-              <tr><td>Tree Pose</td><td>3 dk</td><td>Her taraf</td></tr>
-              <tr><td>Savasana</td><td>5 dk</td><td>—</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Süre</th>
+                <th>Not</th>
+              </tr>
+              <tr>
+                <td>Sun Salutation</td>
+                <td>5 dk</td>
+                <td>5 tur</td>
+              </tr>
+              <tr>
+                <td>Warrior I & II</td>
+                <td>4 dk</td>
+                <td>Her taraf</td>
+              </tr>
+              <tr>
+                <td>Tree Pose</td>
+                <td>3 dk</td>
+                <td>Her taraf</td>
+              </tr>
+              <tr>
+                <td>Savasana</td>
+                <td>5 dk</td>
+                <td>—</td>
+              </tr>
             </table>
             <h4>2. Gün — Kalça Açıcı</h4>
             <table>
-              <tr><th>Hareket</th><th>Süre</th><th>Not</th></tr>
-              <tr><td>Pigeon Pose</td><td>3 dk</td><td>Her taraf</td></tr>
-              <tr><td>Lizard Pose</td><td>3 dk</td><td>Her taraf</td></tr>
-              <tr><td>Happy Baby</td><td>3 dk</td><td>—</td></tr>
-              <tr><td>Butterfly Stretch</td><td>3 dk</td><td>—</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Süre</th>
+                <th>Not</th>
+              </tr>
+              <tr>
+                <td>Pigeon Pose</td>
+                <td>3 dk</td>
+                <td>Her taraf</td>
+              </tr>
+              <tr>
+                <td>Lizard Pose</td>
+                <td>3 dk</td>
+                <td>Her taraf</td>
+              </tr>
+              <tr>
+                <td>Happy Baby</td>
+                <td>3 dk</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Butterfly Stretch</td>
+                <td>3 dk</td>
+                <td>—</td>
+              </tr>
             </table>
             <h4>3–5. Gün</h4>
             <table>
-              <tr><th>Hareket</th><th>Süre</th><th>Not</th></tr>
-              <tr><td>Cat-Cow</td><td>3 dk</td><td>Omurga</td></tr>
-              <tr><td>Downward Dog</td><td>3 dk</td><td>Hamstring</td></tr>
-              <tr><td>Child's Pose</td><td>4 dk</td><td>Toparlanma</td></tr>
-              <tr><td>Foam Rolling</td><td>10 dk</td><td>Tüm vücut</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Süre</th>
+                <th>Not</th>
+              </tr>
+              <tr>
+                <td>Cat-Cow</td>
+                <td>3 dk</td>
+                <td>Omurga</td>
+              </tr>
+              <tr>
+                <td>Downward Dog</td>
+                <td>3 dk</td>
+                <td>Hamstring</td>
+              </tr>
+              <tr>
+                <td>Child's Pose</td>
+                <td>4 dk</td>
+                <td>Toparlanma</td>
+              </tr>
+              <tr>
+                <td>Foam Rolling</td>
+                <td>10 dk</td>
+                <td>Tüm vücut</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- ═══ ORTA ═══ -->
+        <!-- Orta seviye programlar -->
 
-        <!-- 4. HIIT Cardio — Orta -->
+        <!-- 4. HIIT Cardio Blast -->
         <div class="workout-card" data-frequency="3" data-level="2">
           <div class="card-header">
             <div>
@@ -189,37 +387,98 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Kısa sürede kalori yakmak ve kardiyovasküler dayanıklılığı artırmak için yüksek yoğunluklu interval antrenman.</p>
+          <p class="card-description">Kısa sürede kalori yakmak ve kardiyovasküler dayanıklılığı artırmak için yüksek
+            yoğunluklu interval antrenman.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Full Body HIIT</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Burpees</td><td>4</td><td>12</td></tr>
-              <tr><td>Mountain Climbers</td><td>4</td><td>20</td></tr>
-              <tr><td>Jump Squat</td><td>4</td><td>15</td></tr>
-              <tr><td>Plank</td><td>3</td><td>45sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Burpees</td>
+                <td>4</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Mountain Climbers</td>
+                <td>4</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Jump Squat</td>
+                <td>4</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>45sn</td>
+              </tr>
             </table>
             <h4>2. Gün — Upper Body HIIT</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Push-Up</td><td>4</td><td>15</td></tr>
-              <tr><td>Plank to Push-Up</td><td>3</td><td>10</td></tr>
-              <tr><td>Diamond Push-Up</td><td>3</td><td>10</td></tr>
-              <tr><td>Bear Crawl</td><td>3</td><td>30sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Push-Up</td>
+                <td>4</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Plank to Push-Up</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Diamond Push-Up</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Bear Crawl</td>
+                <td>3</td>
+                <td>30sn</td>
+              </tr>
             </table>
             <h4>3. Gün — Lower Body HIIT</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Box Jump</td><td>4</td><td>10</td></tr>
-              <tr><td>Walking Lunge</td><td>3</td><td>12</td></tr>
-              <tr><td>Squat Jump</td><td>4</td><td>15</td></tr>
-              <tr><td>Wall Sit</td><td>3</td><td>40sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Box Jump</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Walking Lunge</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Squat Jump</td>
+                <td>4</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Wall Sit</td>
+                <td>3</td>
+                <td>40sn</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- 5. Boxing — Orta -->
+        <!-- 5. Boxing Conditioning -->
         <div class="workout-card" data-frequency="3" data-level="2">
           <div class="card-header">
             <div>
@@ -230,37 +489,98 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Boks kombinasyonlarını kondisyon devreleriyle birleştirerek güç, çeviklik ve dayanıklılık geliştirin.</p>
+          <p class="card-description">Boks kombinasyonlarını kondisyon devreleriyle birleştirerek güç, çeviklik ve
+            dayanıklılık geliştirin.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Temel Kombolar</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Jab-Cross Combo</td><td>5</td><td>3 dk</td></tr>
-              <tr><td>Shadow Boxing</td><td>3</td><td>3 dk</td></tr>
-              <tr><td>Burpee</td><td>3</td><td>10</td></tr>
-              <tr><td>Jump Rope</td><td>3</td><td>2 dk</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Jab-Cross Combo</td>
+                <td>5</td>
+                <td>3 dk</td>
+              </tr>
+              <tr>
+                <td>Shadow Boxing</td>
+                <td>3</td>
+                <td>3 dk</td>
+              </tr>
+              <tr>
+                <td>Burpee</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Jump Rope</td>
+                <td>3</td>
+                <td>2 dk</td>
+              </tr>
             </table>
             <h4>2. Gün — Güç & Çeviklik</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Hook-Uppercut Combo</td><td>5</td><td>3 dk</td></tr>
-              <tr><td>Medicine Ball Slam</td><td>3</td><td>12</td></tr>
-              <tr><td>Agility Ladder</td><td>4</td><td>30sn</td></tr>
-              <tr><td>Plank</td><td>3</td><td>45sn</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Hook-Uppercut Combo</td>
+                <td>5</td>
+                <td>3 dk</td>
+              </tr>
+              <tr>
+                <td>Medicine Ball Slam</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Agility Ladder</td>
+                <td>4</td>
+                <td>30sn</td>
+              </tr>
+              <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>45sn</td>
+              </tr>
             </table>
             <h4>3. Gün — Dayanıklılık</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Heavy Bag Rounds</td><td>6</td><td>3 dk</td></tr>
-              <tr><td>Mountain Climbers</td><td>3</td><td>20</td></tr>
-              <tr><td>Russian Twist</td><td>3</td><td>16</td></tr>
-              <tr><td>Cool Down Stretch</td><td>1</td><td>5 dk</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Heavy Bag Rounds</td>
+                <td>6</td>
+                <td>3 dk</td>
+              </tr>
+              <tr>
+                <td>Mountain Climbers</td>
+                <td>3</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Russian Twist</td>
+                <td>3</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Cool Down Stretch</td>
+                <td>1</td>
+                <td>5 dk</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- 6. Upper/Lower — Orta -->
+        <!-- 6. Upper / Lower Split -->
         <div class="workout-card" data-frequency="5" data-level="2">
           <div class="card-header">
             <div>
@@ -271,60 +591,181 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Üst vücut ve alt vücut seanslarını değiştirerek dengeli gelişim ve optimum toparlanma sağlayan program.</p>
+          <p class="card-description">Üst vücut ve alt vücut seanslarını değiştirerek dengeli gelişim ve optimum
+            toparlanma sağlayan program.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Upper A</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Bench Press</td><td>4</td><td>8</td></tr>
-              <tr><td>Barbell Row</td><td>4</td><td>8</td></tr>
-              <tr><td>Overhead Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Face Pull</td><td>3</td><td>15</td></tr>
-              <tr><td>Bicep Curl</td><td>3</td><td>12</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Bench Press</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Barbell Row</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Overhead Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Face Pull</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Bicep Curl</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
             </table>
             <h4>2. Gün — Lower A</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Squat</td><td>4</td><td>6</td></tr>
-              <tr><td>Romanian Deadlift</td><td>3</td><td>10</td></tr>
-              <tr><td>Leg Press</td><td>3</td><td>12</td></tr>
-              <tr><td>Leg Curl</td><td>3</td><td>12</td></tr>
-              <tr><td>Calf Raise</td><td>4</td><td>15</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Squat</td>
+                <td>4</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Romanian Deadlift</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Leg Curl</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Calf Raise</td>
+                <td>4</td>
+                <td>15</td>
+              </tr>
             </table>
             <h4>3. Gün — Upper B</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Pull-Up</td><td>4</td><td>8</td></tr>
-              <tr><td>Incline DB Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Lateral Raise</td><td>3</td><td>14</td></tr>
-              <tr><td>Cable Row</td><td>3</td><td>12</td></tr>
-              <tr><td>Tricep Dip</td><td>3</td><td>10</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Pull-Up</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Incline DB Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lateral Raise</td>
+                <td>3</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Cable Row</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Tricep Dip</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
             </table>
             <h4>4. Gün — Lower B</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Deadlift</td><td>4</td><td>5</td></tr>
-              <tr><td>Bulgarian Split Squat</td><td>3</td><td>10</td></tr>
-              <tr><td>Hip Thrust</td><td>3</td><td>12</td></tr>
-              <tr><td>Leg Extension</td><td>3</td><td>12</td></tr>
-              <tr><td>Calf Raise</td><td>3</td><td>15</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Deadlift</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Bulgarian Split Squat</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Hip Thrust</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Leg Extension</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Calf Raise</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
             </table>
             <h4>5. Gün — Full Body Light</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Goblet Squat</td><td>3</td><td>12</td></tr>
-              <tr><td>Push-Up</td><td>3</td><td>15</td></tr>
-              <tr><td>DB Row</td><td>3</td><td>12</td></tr>
-              <tr><td>Plank</td><td>3</td><td>45sn</td></tr>
-              <tr><td>Stretch</td><td>1</td><td>10 dk</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Goblet Squat</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Push-Up</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>DB Row</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>45sn</td>
+              </tr>
+              <tr>
+                <td>Stretch</td>
+                <td>1</td>
+                <td>10 dk</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- ═══ İLERİ ═══ -->
+        <!-- İleri seviye programlar -->
 
-        <!-- 7. Push/Pull/Legs — İleri -->
+        <!-- 7. Push / Pull / Legs -->
         <div class="workout-card" data-frequency="5" data-level="3">
           <div class="card-header">
             <div>
@@ -335,58 +776,179 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Maksimum kas hipertrofisi için itme, çekme ve bacak günlerini ayıran ileri seviye program.</p>
+          <p class="card-description">Maksimum kas hipertrofisi için itme, çekme ve bacak günlerini ayıran ileri seviye
+            program.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Push (İtme)</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Bench Press</td><td>4</td><td>8</td></tr>
-              <tr><td>Overhead Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Incline DB Press</td><td>3</td><td>10</td></tr>
-              <tr><td>Lateral Raise</td><td>3</td><td>14</td></tr>
-              <tr><td>Tricep Pushdown</td><td>3</td><td>12</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Bench Press</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Overhead Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Incline DB Press</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lateral Raise</td>
+                <td>3</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Tricep Pushdown</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
             </table>
             <h4>2. Gün — Pull (Çekme)</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Barbell Row</td><td>4</td><td>8</td></tr>
-              <tr><td>Lat Pulldown</td><td>3</td><td>10</td></tr>
-              <tr><td>Face Pull</td><td>3</td><td>15</td></tr>
-              <tr><td>Bicep Curl</td><td>3</td><td>12</td></tr>
-              <tr><td>Hammer Curl</td><td>3</td><td>10</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Barbell Row</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Lat Pulldown</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Face Pull</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Bicep Curl</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Hammer Curl</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
             </table>
             <h4>3. Gün — Legs (Bacak)</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Squat</td><td>4</td><td>8</td></tr>
-              <tr><td>Romanian Deadlift</td><td>3</td><td>10</td></tr>
-              <tr><td>Leg Press</td><td>3</td><td>12</td></tr>
-              <tr><td>Leg Curl</td><td>3</td><td>12</td></tr>
-              <tr><td>Calf Raise</td><td>4</td><td>15</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Squat</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Romanian Deadlift</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Leg Curl</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Calf Raise</td>
+                <td>4</td>
+                <td>15</td>
+              </tr>
             </table>
             <h4>4. Gün — Push B</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>DB Shoulder Press</td><td>4</td><td>10</td></tr>
-              <tr><td>Cable Fly</td><td>3</td><td>12</td></tr>
-              <tr><td>Pec Deck</td><td>3</td><td>12</td></tr>
-              <tr><td>Front Raise</td><td>3</td><td>12</td></tr>
-              <tr><td>Skull Crusher</td><td>3</td><td>10</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>DB Shoulder Press</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Cable Fly</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Pec Deck</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Front Raise</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Skull Crusher</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
             </table>
             <h4>5. Gün — Pull B</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Pull-Up</td><td>4</td><td>8</td></tr>
-              <tr><td>T-Bar Row</td><td>3</td><td>10</td></tr>
-              <tr><td>Cable Row</td><td>3</td><td>12</td></tr>
-              <tr><td>Reverse Fly</td><td>3</td><td>14</td></tr>
-              <tr><td>Preacher Curl</td><td>3</td><td>10</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Pull-Up</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>T-Bar Row</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Cable Row</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Reverse Fly</td>
+                <td>3</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Preacher Curl</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
             </table>
           </div>
         </div>
 
-        <!-- 8. Atletik Performans — İleri -->
+        <!-- 8. Atletik Performans -->
         <div class="workout-card" data-frequency="5" data-level="3">
           <div class="card-header">
             <div>
@@ -397,40 +959,121 @@
               </div>
             </div>
           </div>
-          <p class="card-description">Pliometrik, sürat drilleri ve kuvvet çalışmalarını harmanlayan yarışmacı sporcular için tasarlanmış program.</p>
+          <p class="card-description">Pliometrik, sürat drilleri ve kuvvet çalışmalarını harmanlayan yarışmacı sporcular
+            için tasarlanmış program.</p>
           <div class="card-toggle">Programı Gör →</div>
           <div class="workout-detail" hidden>
             <h4>1. Gün — Patlayıcı Güç</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Power Clean</td><td>4</td><td>5</td></tr>
-              <tr><td>Box Jump</td><td>4</td><td>8</td></tr>
-              <tr><td>Depth Jump</td><td>3</td><td>6</td></tr>
-              <tr><td>Sprint</td><td>6</td><td>30m</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Power Clean</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Box Jump</td>
+                <td>4</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Depth Jump</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Sprint</td>
+                <td>6</td>
+                <td>30m</td>
+              </tr>
             </table>
             <h4>2. Gün — Kuvvet</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Back Squat</td><td>5</td><td>5</td></tr>
-              <tr><td>Bench Press</td><td>5</td><td>5</td></tr>
-              <tr><td>Weighted Pull-Up</td><td>4</td><td>6</td></tr>
-              <tr><td>Farmer's Walk</td><td>3</td><td>40m</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Back Squat</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Bench Press</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Weighted Pull-Up</td>
+                <td>4</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Farmer's Walk</td>
+                <td>3</td>
+                <td>40m</td>
+              </tr>
             </table>
             <h4>3. Gün — Çeviklik</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Agility Ladder</td><td>5</td><td>30sn</td></tr>
-              <tr><td>Cone Drill</td><td>4</td><td>4 tur</td></tr>
-              <tr><td>Lateral Bound</td><td>3</td><td>10</td></tr>
-              <tr><td>Shuttle Run</td><td>4</td><td>20m</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Agility Ladder</td>
+                <td>5</td>
+                <td>30sn</td>
+              </tr>
+              <tr>
+                <td>Cone Drill</td>
+                <td>4</td>
+                <td>4 tur</td>
+              </tr>
+              <tr>
+                <td>Lateral Bound</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Shuttle Run</td>
+                <td>4</td>
+                <td>20m</td>
+              </tr>
             </table>
             <h4>4–5. Gün — Dayanıklılık & Toparlanma</h4>
             <table>
-              <tr><th>Hareket</th><th>Set</th><th>Tekrar</th></tr>
-              <tr><td>Tempo Run</td><td>1</td><td>20 dk</td></tr>
-              <tr><td>Sled Push</td><td>4</td><td>30m</td></tr>
-              <tr><td>Battle Rope</td><td>3</td><td>30sn</td></tr>
-              <tr><td>Foam Roll & Stretch</td><td>1</td><td>15 dk</td></tr>
+              <tr>
+                <th>Hareket</th>
+                <th>Set</th>
+                <th>Tekrar</th>
+              </tr>
+              <tr>
+                <td>Tempo Run</td>
+                <td>1</td>
+                <td>20 dk</td>
+              </tr>
+              <tr>
+                <td>Sled Push</td>
+                <td>4</td>
+                <td>30m</td>
+              </tr>
+              <tr>
+                <td>Battle Rope</td>
+                <td>3</td>
+                <td>30sn</td>
+              </tr>
+              <tr>
+                <td>Foam Roll & Stretch</td>
+                <td>1</td>
+                <td>15 dk</td>
+              </tr>
             </table>
           </div>
         </div>
@@ -439,7 +1082,7 @@
     </div>
   </main>
 
-  <!-- ═══ MODAL ═══ -->
+  <!-- Detay penceresi -->
   <div class="modal-overlay" id="workoutModal">
     <div class="modal">
       <button class="modal-close" id="modalClose">✕</button>
@@ -448,11 +1091,12 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
+  <!-- Alt bilgi -->
   <footer class="footer">
     <p>&copy; 2026 <a href="index.html">FitPulse</a>. Tüm hakları saklıdır.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

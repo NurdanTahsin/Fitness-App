@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FitPulse BMR Hesaplayıcı — Mifflin-St Jeor denklemi ile bazal metabolizma hızınızı hesaplayın.">
+  <meta name="description"
+    content="FitPulse BMR Hesaplayıcı — Mifflin-St Jeor denklemi ile bazal metabolizma hızınızı hesaplayın.">
   <title>FitPulse — BMR Hesaplayıcı</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
+  <!-- Üst menü -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">
       <div class="logo-dot"></div>
@@ -27,11 +30,11 @@
     </ul>
   </nav>
 
-  <!-- CALCULATOR -->
+  <!-- BMR hesaplayıcı alanı -->
   <main class="page-wrapper">
     <div class="calc-split">
 
-      <!-- LEFT — Form -->
+      <!-- Sol taraf: form -->
       <div class="calc-form-side">
         <div class="calc-form-container">
           <h2>BMR <span class="accent">Hesaplayıcı</span></h2>
@@ -72,7 +75,7 @@
         </div>
       </div>
 
-      <!-- RIGHT — Result -->
+      <!-- Sağ taraf: sonuç -->
       <div class="calc-result-side">
         <div class="result-display">
           <div class="result-placeholder" id="resultPlaceholder">
@@ -84,7 +87,8 @@
             <span class="result-label">Bazal Metabolizma Hızınız</span>
             <div class="result-value" id="bmrValue">—</div>
             <span class="result-unit">kcal / gün</span>
-            <p class="result-note">Bu, vücudunuzun dinlenme halinde temel fizyolojik fonksiyonları sürdürmek için ihtiyaç duyduğu kalori miktarıdır.</p>
+            <p class="result-note">Bu, vücudunuzun dinlenme halinde temel fizyolojik fonksiyonları sürdürmek için
+              ihtiyaç duyduğu kalori miktarıdır.</p>
 
             <div class="tdee-breakdown" id="tdeeBreakdown">
               <div class="tdee-item">
@@ -113,4 +117,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

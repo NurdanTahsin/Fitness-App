@@ -1,4 +1,4 @@
-/* ===== TARİFLER ===== */
+/* ===== TARİF SAYFASI ===== */
 .sort-controls {
   display: flex;
   justify-content: center;
@@ -7,11 +7,13 @@
   align-items: center;
 }
 
+/* Sıralama alanı */
 .sort-controls label {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
 
+/* Tarif listesi */
 .recipes-list {
   max-width: 1000px;
   margin: 20px auto;
@@ -21,23 +23,28 @@
   gap: 16px;
 }
 
+/* Tek tarif kartı */
 .recipe-card {
   display: flex;
   overflow: hidden;
+  /* 29. satır: kart içeriği taşarsa taşan kısmı keser, görsel kırpılmasını sağlar */
 }
 
+/* Tarif görsel alanı */
 .recipe-card .recipe-image {
   width: 240px;
   flex-shrink: 0;
   overflow: hidden;
 }
 
+/* Görseli alanı dolduracak şekilde ayarla */
 .recipe-card .recipe-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Tarif metin alanı */
 .recipe-card .recipe-info {
   flex: 1;
   padding: 20px 24px;
@@ -59,6 +66,7 @@
   margin-bottom: 12px;
 }
 
+/* Besin bilgileri kutusu */
 .nutrition-facts {
   display: flex;
   gap: 10px;
@@ -86,6 +94,7 @@
   text-transform: uppercase;
 }
 
+/* Malzeme ve hazırlık bölümü */
 .recipe-extra {
   border-top: 1px solid var(--border-color);
   padding-top: 10px;
@@ -118,4 +127,3 @@
   font-size: 0.78rem;
   color: #a0a0a0;
 }
-

@@ -1,4 +1,4 @@
-/* ===== ANTRENMANLAR ===== */
+/* ===== ANTRENMAN SAYFASI ===== */
 .workouts-layout {
   display: flex;
   max-width: 1000px;
@@ -7,6 +7,7 @@
   gap: 20px;
 }
 
+/* Sol taraftaki filtre kutusu */
 .workouts-sidebar {
   width: 200px;
   flex-shrink: 0;
@@ -16,6 +17,7 @@
   padding: 16px;
 }
 
+/* Filtre başlığı */
 .sidebar-title {
   font-size: 0.7rem;
   font-weight: 600;
@@ -25,6 +27,7 @@
   margin-bottom: 10px;
 }
 
+/* Filtre butonları */
 .filter-btn {
   display: block;
   width: 100%;
@@ -49,6 +52,7 @@
   border-color: var(--accent);
 }
 
+/* Antrenman kartlarının dizilimi */
 .workouts-main {
   flex: 1;
   display: flex;
@@ -57,6 +61,7 @@
   align-content: flex-start;
 }
 
+/* Tek kart görünümü */
 .workout-card {
   width: calc(50% - 8px);
   padding: 20px;
@@ -117,7 +122,7 @@
   display: none;
 }
 
-/* ===== MODAL ===== */
+/* ===== DETAY PENCERESİ ===== */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -133,6 +138,8 @@
   display: flex;
 }
 
+/* Modal kutusu */
+/* Not: modal içeriği uzun olursa dikey kaydırma aktif (overflow-y: auto). */
 .modal {
   width: 100%;
   max-width: 560px;
@@ -142,6 +149,7 @@
   position: relative;
 }
 
+/* Kapatma butonu */
 .modal-close {
   position: absolute;
   top: 12px;
@@ -157,6 +165,8 @@
   color: #fff;
 }
 
+/* Modal üst başlık alanı */
+/* Not: başlık ve meta bilgileri burada gösterilir (kart başlığı + süre/rozet). */
 .modal-header {
   padding: 20px 20px 0;
 }
@@ -178,6 +188,8 @@
   color: var(--text-muted);
 }
 
+/* Modal içeriği */
+/* Not: detay tabloları (hareket, set, tekrar) burada yer alır. */
 .modal-body {
   padding: 16px 20px 20px;
   overflow-y: auto;
@@ -213,4 +225,3 @@
   color: var(--text-muted);
   font-weight: 500;
 }
-

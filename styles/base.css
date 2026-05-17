@@ -1,15 +1,15 @@
-/* === FitPulse - Stil Dosyası === */
-/* Font: Google Fonts - Poppins */
+/* === FitPulse ortak temel stilleri === */
+/* Yazı tipi: Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* Sıfırlama */
+/* Tarayıcı varsayılanlarını sıfırla */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Genel */
+/* Genel sayfa ayarları */
 html {
   scroll-behavior: smooth;
 }
@@ -50,7 +50,7 @@ ul {
   list-style: none;
 }
 
-/* ===== NAVBAR ===== */
+/* ===== ÜST MENÜ ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -105,7 +105,7 @@ ul {
   color: #d63031;
 }
 
-/* Hamburger menü (mobil) */
+/* Mobil menü düğmesi */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -121,6 +121,8 @@ ul {
   transition: 0.25s ease;
 }
 
+/* Not: Aşağıdaki dönüşümler sadece .hamburger.active olduğunda (mobilde görünürken)
+   uygulanır — üç çizgi X ikonuna dönüşür. */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -133,7 +135,7 @@ ul {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Buton */
+/* Ortak buton */
 .btn {
   display: inline-block;
   transition: all 0.3s ease;
@@ -170,7 +172,7 @@ ul {
   border-color: var(--accent);
 }
 
-/* Rozet */
+/* Seviye rozeti */
 .badge {
   display: inline-block;
   padding: 2px 8px;
@@ -195,7 +197,8 @@ ul {
   color: #e57373;
 }
 
-/* Form input */
+/* Form alanları */
+/* Not: input, select ve filtre düğümleri ortak görünüm alır. */
 .input {
   width: 100%;
   padding: 10px 14px;
@@ -207,7 +210,7 @@ textarea.input {
   min-height: 100px;
 }
 
-/* Select */
+/* Açılır menü */
 .select {
   padding: 8px 14px;
   font-size: 0.85rem;
@@ -219,7 +222,7 @@ textarea.input {
   color: #e0e0e0;
 }
 
-/* Ortak kart görünümleri */
+/* Ortak kart görünümü */
 .feature-card,
 .workouts-sidebar,
 .workout-card,
@@ -246,7 +249,7 @@ textarea.input {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Sayfa düzeni */
+/* Sayfa yerleşimi */
 .page-wrapper {
   padding-top: 60px;
   min-height: 100vh;
@@ -271,7 +274,8 @@ textarea.input {
   color: var(--accent);
 }
 
-/* Form grubu */
+/* Form etiketi ve alan grubu */
+/* Not: form-group satır içi düzeni responsive olarak daralır. */
 .form-group {
   margin-bottom: 16px;
 }
@@ -286,7 +290,7 @@ textarea.input {
   margin-bottom: 4px;
 }
 
-/* Footer */
+/* Alt bilgi alanı */
 .footer {
   text-align: center;
   padding: 24px;
